@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono&display=swap');
+
+* {
+  font-family: 'JetBrains Mono', monospace;
+  outline: 0;
+  word-wrap: break-word;
+}
+
+html, body {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  background-color: #30332c;
+  zoom: 150%; /*non-standard and not even on a standard's track*/
+}
+
+span {
+  margin-bottom: 100px;
+}
+
+p {
+  margin-top: 0px;
+}
+
+.date {
+  user-select: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  /*-webkit-touch-callout: none;*/
+}
+
+.username {
+  font-size: medium;
+}
+
+.text {
+  font-size: small;
+}
+
+.date {
+  font-size: xx-small;
+}
+
+.username:hover {
+  /* background-color: #3a3e35; */
+  text-decoration: underline;
+}
+
+.sentMessage {
+  margin-bottom: 0px;
+  max-width: 85%;
+}
+
+.sentMessage:hover {
+  background-color: #2b2d27;
+}
+
+.publicMsg {
+  color: orangered;
+}
+
+.yourPrivateMsg {
+  color: lime;
+}
+
+.directPublicMsg {
+  color: orange;
+}
+
+.yourDirectPublicMsg {
+  color: chocolate;
+}
+
+.myPublicMsg {
+  color: #7289DA;
+}
+
+.myPrivateMsg {
+  color: green;
+}
+
+.myDirectPublic {
+  color: burlywood;
+}
+
+.mySec {
+  color: yellow;
+}
+
+.sec:hover, .mySec:hover {
+  background:#4d5347;
+}
+
+#clients {
+  display: inline;
+  position: fixed;
+  word-wrap: normal;
+  width: 12%;
+  text-align: center;
+  right: 0px;
+  background: #3a3e35;
+  color: orange;
+  height: 100vh;
+  outline: 1px solid black;
+  overflow: scroll;
+  scrollbar-width: none;
+}
+
+#clients::-webkit-scrollbar {
+    display: none;
+}
+
+#typing {
+  color: #99AAB5;
+  font-size : 8px;
+}
+
+#container {
+  display: flex;
+  width: 100%;
+  position: fixed;
+  bottom: 0px;
+}
+
+#message {
+  resize: none;
+  background-color: #23272a;
+  max-height: 50vh;
+  color: white;
+  flex-basis: 80%;
+}
+
+#send {
+  height: 40px;
+}

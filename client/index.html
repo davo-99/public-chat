@@ -1,0 +1,31 @@
+<!doctype html>
+<html>
+<head>
+    <title>Public Chat</title>
+    <link rel='stylesheet' type='text/css' href='https://fonts.googleapis.com/css?family=Eczar'>
+    <link rel='stylesheet' type='text/css' href='https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css'>
+    <link rel="stylesheet" type="text/css" href="./style.css"/>
+    <link rel="icon" href="../favicon.ico">
+</head>
+<body>
+    <div id="popDiv" class="popup">
+        <div id="particles-js"></div>
+        <h2>Welcome to Public Chat</h2>
+        <span id="error"></span>
+        <span class="popup-item">
+            <input id="popup-username" type="text" placeholder="Username">
+            <span></span>
+        </span>
+        <span class="popup-item">
+            <input id="popup-status" type="text" placeholder="Status (optional)">
+            <span></span>
+        </span>
+        <span id="popup-button" class="popup-button">Enter chat</span>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.js"></script>
+    <script src="./index.js"></script>
+    <script>
+        particlesJS.load('particles-js', './particles.json');
+    </script>
+</body>
+</html>

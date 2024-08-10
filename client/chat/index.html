@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/@sweetalert2/theme-dark@4/dark.css" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="icon" href="../favicon.ico">
+    <title>Public Chat</title>
+</head>
+<body>
+    <div id="clients"></div>
+    <div id="chat"></div>
+    <div id="typing"></div>
+    <div id="container">
+        <textarea id="message" autofocus></textarea>
+        <button id="send">Send</button>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.4.4/dist/sweetalert2.min.js"></script> <!-- Previous version - 10 -->
+    <script src="https://cdn.jsdelivr.net/npm/socket.io-client@4.4.1/dist/socket.io.js"></script> <!-- Previous version - 3.0.3 -->
+    <!-- <script src="https://cdn.jsdelivr.net/npm/underscore@1.13.2/underscore-umd-min.js"></script> -->
+    <script src="https://cdn.jsdelivr.net/npm/lodash@4.17.21/lodash.min.js"></script>
+    <script src="./client.js"></script>
+    <script src="./chat.js"></script>
+    <script src="./index.js"></script>
+</body>
+</html>
